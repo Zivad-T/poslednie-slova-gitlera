@@ -1,3 +1,18 @@
 <html>
-  gitler
+  <head>
+    <meta charset="UTF-8">
+    <title>giter</title>
+    <script scr="https://telegram.org/js/telegram-web-app.js"></script>
+  </head>
+  <body>
+    <button onclick="nyashki_ne_liberali()">Обристайся на меня</button>
+
+    <script>
+      const tg = window.Telegram.WebApp;
+      const user = tg.initDataUnsafe.user;
+      function nyashki_ne_liberali() {
+        alert("Твой адрес: " + user.adres);
+      }
+    </script>
+  </body>
 </html>
